@@ -1,18 +1,15 @@
-# Dirkey Ocesql
+```markdown
+Homebrew tap for Open COBOL ESQL (ocesql)
 
-## How do I install these formulae?
+Usage:
+1. Tap the repository:
+   brew tap dirkey/ocesql
 
-`brew install dirkey/ocesql/<formula>`
+2. Install the versioned formula:
+   brew install dirkey/ocesql/ocesql@1.4
 
-Or `brew tap dirkey/ocesql` and then `brew install <formula>`.
+3. Run the binary (without linking):
+   $(brew --prefix)/opt/ocesql@1.4/bin/ocesql
 
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "dirkey/ocesql"
-brew "<formula>"
+If you want this version as the default `brew install ocesql`, add an unversioned Formula/ocesql.rb pointing to v1.4.
 ```
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
