@@ -4,16 +4,9 @@ class OcesqlAT14 < Formula
 
   # Stable: point explicitly at the v1.4 release tarball
   url "https://github.com/opensourcecobol/Open-COBOL-ESQL/archive/refs/tags/v1.4.tar.gz"
+  version "1.4"
   sha256 "c0310473aa38ea2921ae4c45ff2463be9cd874efd488d23cd8b0f687644060fd"
   license "GPL-3.0-or-later"
-
-  bottle do
-    root_url "https://github.com/dirkey/homebrew-ocesql/releases/download/v1.4"
-    sha256 cellar: :any,                 arm64_sonoma:   "0000000000000000000000000000000000000000000000000000000000000000"
-    sha256 cellar: :any,                 arm64_ventura:  "1111111111111111111111111111111111111111111111111111111111111111"
-    sha256 cellar: :any,                 monterey:       "2222222222222222222222222222222222222222222222222222222222222222"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "3333333333333333333333333333333333333333333333333333333333333333"
-  end
 
   # Build toolchain (autotools-based project)
   depends_on "autoconf" => :build
